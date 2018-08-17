@@ -1,0 +1,23 @@
+Neos:
+  Flow:
+    security:
+      authentication:
+        providers:
+          'Neos.Neos:Backend':
+            provider: 'SimpleSolution\Ldap\Security\Provider\SimpleSolutionProvider'
+
+SimpleSolution:
+  Ldap:
+    host:
+      hosts: ['127.0.0.1']
+      base_dn: ou=your,dc=ldap,dc=at
+      username: ~
+      password: ~
+      port: 389
+    fields:
+      usernameAttribute: 'uid' 
+    roles: 
+      neos-admin: 'Neos.Neos:Administrator'
+      neos-editor: 'Neos.Neos:Editor'
+    defaultRole: ~
+    additionalHosts: ~

@@ -1,0 +1,29 @@
+{
+    "description": "A plugin that allows to Login into the Backend of Neos via Ldap",
+    "type": "neos-plugin",
+    "name": "simplesolution/ldap",
+    "keywords": [
+        "neos",
+        "neos-plugin",
+        "ldap",
+        "neos backend",
+        "neos backend login",
+        "login",
+        "neos backend login ldap",
+        "neos ldap"
+    ],
+    "require": {
+        "neos/neos": "*",
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleSolution\\Ldap\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "SimpleSolution.Ldap"
+        }
+    }
+}
