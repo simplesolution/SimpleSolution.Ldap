@@ -1,4 +1,4 @@
-# SimpleSolution.Ldap
+# simplesolution/ldap
 Neos Plugin which allows you to login into the Neos Backend with an Ldap server
 
 It doesn't get simpler than this to login via ldap.
