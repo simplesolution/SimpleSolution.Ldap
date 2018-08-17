@@ -3,6 +3,8 @@ Neos Plugin which allows you to login into the Neos Backend with an Ldap server
 
 It doesn't get simpler than this to login via ldap.
 
+At the moment this plugin is only tested with OpenLDAP, but it should work on every ldap server, if not, consider making a pull request.
+
 ## Requirements
 
  * php >= 7
