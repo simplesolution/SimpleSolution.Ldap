@@ -132,8 +132,10 @@ class SimpleSolutionProvider extends AbstractProvider
         // set the default settings
         $this->settings['default'] = $settings;
         // set all additionalHosts
-        foreach($additionalHosts as $additionalHostName => $additionalHostConfig) {
-            $this->settings[$additionalHostName] = $additionalHostConfig;
+        if(!empty($additionalHosts)) {
+            foreach($additionalHosts as $additionalHostName => $additionalHostConfig) {
+                $this->settings[$additionalHostName] = $additionalHostConfig;
+            }
         }
     }
 
